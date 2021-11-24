@@ -16,9 +16,9 @@ public class Chat implements MediadorChat{
     }
 
     @Override
-    public void enviarMensagem(String msg, Usuario emisor) {
+    public void enviarMensagem(String msg, Usuario emissor) {
         for(Usuario receptor:usuarios) {
-            if(receptor != emisor)
+            if(receptor != emissor)
                 receptor.receber(msg);
         }
     }
